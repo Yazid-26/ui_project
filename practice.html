@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c5ad0d41ee.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="practice.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-xl">
+
+        <div class="table_bk">
+
+
+
+            <div class="d-flex headertop ">
+
+                <div class=" headertopleft p-2 B_Font1 ms-4">JOBS</div>
+
+                <div class="headertopright mx-4">
+                    <a href="#" class="addbutton1 "><i class="fa-solid fa-arrow-down" style="color: #000000;"></i>
+                        Excel</a>
+                    <a href="#" class=" addbutton2"><i class="fa-solid fa-plus" style="color: #000000;"></i> Add
+                        Jobsheet</a>
+                </div>
+            </div>
+            <div class="fr_boxstatus mx-4 row">
+                <div class="Overdue col-md-3">
+                    <div>Overdue<br><span style="color:red; font-size: 50px;">37</span> Nos</div>
+                </div>
+                <div class="Newjob col-md-3">
+                    <div>New Jobs<br><span style="color: #09C35F; font-size: 50px;">2</span> Nos</div>
+                </div>
+                <div class="Today-comp col-md-3">
+                    <div>Today Completed<br><span style="color: #0910C3; font-size: 50px;">2</span> Nos</div>
+                </div>
+                <div class="Top-eng ">
+                    <div>Top Engineer<br><span style=" font-size: 50px;">2</span> Nos</div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row mx-4 gap-4 mb-3">
+
+                <input class="searchinput col-md-4" type="search"
+                    placeholder="Job No / Name / Email / Mobile / Vechicle">
+
+                <button class="Search_button1 col-md-3" type="submit">Search</button>
+
+                <button class="AdSearch_button1 col-md-3" type="submit">Advance search</button>
+            </div>
+
+
+
+            <div class="row mx-4 d-flex justify-content-between  mb-3">
+                <!-- <select class=" adsearch_option col-md-3">
+                    <option class="Big_option_size" value="volvo">Volvo</option>
+                    <option class="Big_option_size" value="mercedes">Mercedes</option>
+                    <option class="Big_option_size" value="audi">Audi</option>
+                </select> -->
+                <select class="form-select adsearch_option col-md-3" data-toggle="dropdown">
+                    <i class="bi bi-funnel"></i>
+                    <option selected>Filter</option>
+                    <option value="1">All</option>
+                    <option value="2">Active</option>
+                    <option value="3">Inactive</option>
+                </select>
+
+                <input type="date" class="form-control date col-md-3" placeholder="DD/MM/YYYY">
+
+                <input type="date" class="form-control date col-md-3" placeholder="DD/MM/YYYY">
+
+                <!-- <select class=" adsearch_option col-md-3">
+                    <option value="volvo">Volvo</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select> --> <select class="form-select adsearch_option col-md-3" data-toggle="dropdown">
+                    <i class="bi bi-funnel"></i>
+                    <option selected>Filter</option>
+                    <option value="1">All</option>
+                    <option value="2">Active</option>
+                    <option value="3">Inactive</option>
+                </select>
+
+
+
+            </div>
+            <div class="row mx-4 d-flex justify-content-between tabletop mb-2">
+                <div class="col  ">
+
+                    <input type="checkbox" class=" me-3">
+                    <i class="fa-solid fa-trash me-3"></i>
+                    <i class="fa-solid fa-envelope me-3"></i>
+                    <i class="fa-solid fa-diagram-next me-3"></i>
+
+                </div>
+
+                <div class="col">ONGOING <span class="badge badge-primary"> 10</span></div>
+                <div class="col">ALL JOB CARDS <span class="dot2"> 90</span></div>
+                <div class="col">COMPLETED <span class="dot3"> 70</span></div>
+                <div class="textsm col ">Displaying 1-26 of 26 results</div>
+
+            </div>
+
+
+            <div class="table_layout mx-4">
+                <table>
+                    <thead>
+                        <tr style="background-color: #00000030; position: static;">
+                            <th></th>
+                            <th>Status <i class="fa-solid fa-caret-down "></i></th>
+                            <th>Job # <i class="fa-solid fa-caret-down"></i></th>
+                            <th>Customer <i class="fa-solid fa-caret-down"></i></th>
+                            <th>Date <i class="fa-solid fa-caret-down"></i></th>
+                            <th>Due <i class="fa-solid fa-caret-down"></i></th>
+                            <th>Car </th>
+                            <th>No plate</i></th>
+                            <th>Approval <i class="fa-solid fa-caret-down"></i></th>
+                            <th>Converted <i class="fa-solid fa-caret-down"></i></th>
+                            <th>Est Total <i class="fa-solid fa-caret-down"></i></th>
+                            <th>Edit</th>
+                            <th>share</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Actio</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+
+                        <tr class="table_data1">
+                            <td><input type="checkbox"></td>
+                            <td><span class="badge badge-primary due_status">Primary</span></td>
+                            <td>120#</td>
+                            <td>Admin</td>
+                            <td class="due_data1">Dec 02, 2019</td>
+                            <td class="due_data2">30 days ago</td>
+                            <td>Audi</td>
+                            <td>BC 3320</td>
+                            <td class="text-center app_align"><span class="approvel"></span></td>
+                            <td class="text-center app_align"><span class="Converted"></span></td>
+                            <td>$ 234.00</td>
+                            <td class="text-center"><i class="fa-solid fa-pen" style="color: #000000;"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-share-nodes" style="color: #000000;"></i></td>
+                            <td><select class="myDropdown" name="myDropdown">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select></td>
+
+                        </tr>
+                    </tbody>
+
+
+
+
+
+
+
+                </table>
+
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<!-- <style>
+    select {
+        appearance: none;
+        outline: 0;
+        background: green;
+        background-image: none;
+        width: 100%;
+        height: 100%;
+        color: black;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .select {
+        position: relative;
+        display: block;
+        width: 15em;
+        height: 2em;
+        line-height: 3;
+        overflow: hidden;
+        border-radius: .25em;
+        padding-bottom: 10px;
+    }
+
+    h1 {
+        color: green;
+    }
+</style>
+</head> -->

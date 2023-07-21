@@ -1,0 +1,222 @@
+body {
+    background-image: url("./Image/Background.png");
+    background-repeat: no-repeat;
+    color: #000;
+    font-family: Inter;
+    font-weight: 600;
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    height: 1116px;
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+
+
+
+}
+
+.table_bk {
+
+    height: 975px;
+    background-color: #ffffff60;
+    /* opacity: 50%; */
+    border-radius: 30px;
+    /* filter: blur(1px); */
+    margin-top: 143px;
+
+}
+
+.font1 {
+    font-size: 48px;
+    padding: 10px;
+    margin: 0;
+    /* margin-right: 69%; */
+
+}
+
+.addbutton1 {
+    border-radius: 20px;
+    background: #45B600;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: white;
+    padding: 10px 16px;
+   
+    max-width: 150px;
+}
+
+.addbutton1:hover {
+    background-color: white;
+    color: black
+}
+
+.addbutton2 {
+    border-radius: 20px;
+    background: #45B600;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    padding: 10px 16px;
+    color: white;
+    max-width: 150px;
+}
+
+.addbutton2:hover {
+    background-color: white;
+    color: black
+}
+
+.headertop {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Overdue {
+    border-radius: 30px 0px 0px 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    width: 25%;
+    padding: 0px 26px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+/* <div class="Overdue">
+<p>Overdue<br><span style="color:red; font-size: 50px;">37</span> Nos</p>
+</div> */
+.Newjob {
+
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    width: 25%;
+    padding: 0px 26px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.Today-comp {
+
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    width: 25%;
+    padding: 0px 26px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.Top-eng {
+    border-radius: 0px 30px 30px 0px;
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    width: 25%;
+    padding: 0px 26px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+
+.row-count {
+    gap: 24px;
+    display: flex;
+}
+
+.pagesize {
+    width: 95%;
+    margin: auto;
+
+
+}
+/* Seach button 
+* {
+   box-sizing: border-box;
+}
+input[type=text] {
+   padding: 12px;
+   font-size: 17px;
+   border: 1px solid grey;
+   float: left;
+   width: 80%;
+   background: #f1f1f1;
+}
+button {
+   float: left;
+   width: 20%;
+   padding: 12px;
+   background: rgb(14, 81, 204);
+   color: white;
+   font-size: 17px;
+   border: 1px solid grey;
+   border-left: none;
+   cursor: pointer;
+}
+button:hover {
+   background: #1b11a5;
+}
+</style>
+</head>
+<body>
+<h1>Search button example</h1>
+<form >
+<input type="text" placeholder="Search.." name="search">
+<button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</body>
+</html>
+*/
+
+/* Drowdown button
+
+<center>
+        <h1>GeeksforGeeks</h1>
+        <div class="select">
+            <select name="slct" id="slct">
+                <option>Computer Science Subjects</option>
+                <option value="1">Operating System</option>
+                <option value="2">Computer Networks</option>
+                <option value="3">Data Structure</option>
+                <option value="4">Algorithm</option>
+                <option value="5">C programming</option>
+                <option value="6">JAVA</option>
+            </select>
+        </div>
+</center> 
+select {
+    appearance: none;
+    outline: 0;
+    background: green;
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+ 
+.select {
+    position: relative;
+    display: block;
+    width: 15em;
+    height: 2em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+    padding-bottom: 10px;
+}  */
+
+
+
+
+

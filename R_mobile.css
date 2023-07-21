@@ -1,0 +1,453 @@
+body {
+    background-image: url("./Image/bg_tablet.png.png");
+
+    background-repeat: no-repeat;
+    background-position: 100%;
+    color: #000;
+    font-family: Inter;
+    font-weight: 600;
+    background-color: #fff;
+    background-blend-mode: difference;
+    background-size: cover;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    height: auto;
+    background-color: #ffffff50;
+    border-radius: 30px;
+    margin-top: 143px;
+}
+
+
+.excel_button  {
+    border-radius: 20px;
+    background: #45B600;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding: 10px 16px;
+    margin-right: 20px;
+    border: 0px;
+}
+
+.excel_button:hover {
+    background-color: white;
+    color: black
+}
+
+.add_button {
+    border-radius: 20px;
+    background: #45B600;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    padding: 10px 16px;
+    color: white;
+    font-size: 16px;
+    border: 0px;
+}
+
+.add_button:hover {
+    background-color: white;
+    color: black
+}
+
+.Overdue {
+    border-radius:20px 0 0 0;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    padding: 0px 26px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    width: 47%;
+}
+
+.New_job {
+    border-radius:0 20px  0 0 ;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    height: 120px;
+    padding: 0px 26px;
+    display: flex;
+    align-items: center;
+    width: 47%;
+}
+
+.Today_comp {
+    border-radius: 0 0 0  20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    height: 120px;
+    padding: 0px 26px;
+    display: flex;
+    align-items: center;
+    width: 47%;
+}
+
+.Top_eng {
+    border-radius: 0 0 20px 0 ;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    padding: 0px 26px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    width: 47%;
+
+
+
+}
+.Job_status {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.searchinput {
+    display: flex;
+   
+    padding: 10px 16px;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+
+.Search_button1 {
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 16px;
+   
+    font-family: Inter;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+
+}
+
+.Search_button1:hover {
+    background-color: #415DA4;
+    color: rgb(255, 255, 255)
+}
+
+.AdSearch_button1 {
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+
+.AdSearch_button1:hover {
+    background-color: #415DA4;
+    color: rgb(255, 255, 255)
+}
+
+.adsearch_option {
+    border-radius: 30px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    height: 48px;
+    padding: 0px 16px;
+    border: 0px;
+}
+
+.date {
+    display: flex;
+    height: 48px;
+    padding: 0px 16px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.textsm {
+    font-size: 14px;
+    font-weight: 400;
+
+
+}
+
+.dot1 {
+
+    background-color: #FFC70030; 
+    color: #000;
+
+}
+
+.dot2 {
+
+    background-color: #0038FF30; 
+    color: #000;
+}
+
+.dot3 {
+
+    background-color: #00FF0A30; 
+    color: #000; 
+}
+
+.tabletop {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px;
+    background: #FFF; 
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-size: 14px;
+    justify-content: space-between;
+
+}
+
+
+.table_layout {
+
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 20px 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow-y: scroll;
+   
+}
+
+
+.myDropdown {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #4194A4;
+    color: #FFF;
+    padding: 0px 6px;
+}
+
+
+
+
+
+
+
+
+.table_layouttop {
+    height: 44;
+    flex-shrink: 0;
+
+    background: #FFF;
+}
+
+
+.tabledata {
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.due_status {
+
+    font-size: var(--bs-badge-font-size);
+
+}
+td {
+
+    padding: 5px;
+    text-align: center;
+}
+th{
+
+    padding: 10px;
+    position: sticky;
+    top: 0px ;
+    background-color: #bbb;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: left;
+}
+.column-1 {
+    width: 14;
+}
+
+.column-2 {
+    width: 16;
+}
+
+.column-3 {
+    width: 14;
+}
+
+.column-4 {
+    width: 14;
+}
+
+.column-5 {
+    width: 14;
+}
+
+.column-6 {
+    width: 14;
+}
+
+.column-7 {
+    width: 14;
+}
+.approvel {
+
+
+    
+    height: 20px;
+    width: 20px;
+    background-color: #0e982e;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #bbb;
+}
+
+.convert{
+    height: 20px;
+    width: 20px;
+    background-color: #980e0e;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #bbb;
+}
+.due_data2 {
+    color: #ff0000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0%
+}
+
+
+.due_data1 {
+    color: #000000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0%
+}
+.no_plate {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    width: 12%;
+
+}
+
+.price_est {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+ 
+
+}
+
+.table_data1:hover {
+    background-color: #00000010;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #f1f1f1;
+    color: black;
+  }
+  
+  .main {
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+
+  /* <div class="navbar">
+  <a href="#home" class="active"><button class="btn btn-outline-success col-md-3 col-lg-2 me-3 excel_button"><i
+  class="fa-solid fa-arrow-down" style="color: #000000;"></i> Excel</button></a>
+  <a href="#news"><button class="btn btn-outline-success col-md-3 col-lg-2 add_button"><i class="fa-solid fa-plus"
+  style="color: #000000;"></i>
+  AddJobsheet</button>
+  </a>
+  <a href="#contact">Contact</a>
+</div>
+
+<button class="btn btn-outline-success col-md-3 col-lg-2 me-3 excel_button"><i
+class="fa-solid fa-arrow-down" style="color: #000000;"></i> Excel</button>
+<button class="btn btn-outline-success col-md-3 col-lg-2 add_button"><i class="fa-solid fa-plus"
+style="color: #000000;"></i>
+AddJobsheet</button> */

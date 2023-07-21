@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c5ad0d41ee.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="R_lap.css">
+    <title>R_lap</title>
+</head>
+
+<body>
+    <div class="container
+    container-fluid
+    container-lg
+    container-md
+    container-sm
+    container-xl
+    container-xxl p-3">
+
+        <div style="align-items: end" class="row mx-2 mb-3">
+
+            <div class="col p-0">
+                <h1 class="m-0">JOBS</h1>
+            </div>
+            <button class="btn btn-outline-success col-md-3 col-lg-2 me-3 excel_button"><i
+                    class="fa-solid fa-arrow-down" style="color: #000000;"></i> Excel</button>
+            <button class="btn btn-outline-success col-md-3 col-lg-2 add_button"><i class="fa-solid fa-plus"
+                    style="color: #000000;"></i>
+                AddJobsheet</button>
+
+        </div>
+
+        <div class="Job_status row mx-2 mb-3 ">
+
+            <div class="Overdue  col mx 1">
+                <div>Overdue<br><span style="color:red; font-size: 50px;">37</span> Nos</div>
+            </div>
+
+            <div class="New_job col mx 1">
+                <div>New Jobs<br><span style="color: #09C35F; font-size: 50px;">2</span> Nos</div>
+            </div>
+
+            <div class="Today_comp col  mx 1">
+                <div>Completed<br><span style="color: #0910C3; font-size: 50px;">2</span> Nos</div>
+            </div>
+
+            <div class="Top_eng  col mx 1 ">
+                <div>Top Engineer<br><span style=" font-size: 50px;">2</span> Nos</div>
+            </div>
+
+
+        </div>
+
+        <div class="row mb-3 mx-2">
+
+            <input class="searchinput col-4 me-3" type="search" placeholder="Job No / Name / Email / Mobile / Vechicle">
+
+            <button class="Search_button1 col-3 me-3" type="submit">Search</button>
+
+            <button class="AdSearch_button1 col-3 me-3" type="submit">Advance search</button>
+        </div>
+
+        <div class="row mx-2 d-flex justify-content-between  mb-3">
+
+            <select class="form-select adsearch_option col-3" data-toggle="dropdown">
+                <i class="bi bi-funnel"></i>
+                <option selected>Filter</option>
+                <option value="1">All</option>
+                <option value="2">Active</option>
+                <option value="3">Inactive</option>
+            </select>
+
+            <input type="date" class="form-control date col-3" placeholder="DD/MM/YYYY">
+
+            <input type="date" class="form-control date col-3" placeholder="DD/MM/YYYY">
+
+            <select class="form-select adsearch_option col-3" data-toggle="dropdown">
+                <i class="bi bi-funnel"></i>
+                <option selected>Filter</option>
+                <option value="1">All</option>
+                <option value="2">Active</option>
+                <option value="3">Inactive</option>
+            </select>
+
+
+
+        </div>
+        <div class="row mx-1 tabletop mb-3 text-center">
+            <div class="col-2  pe-0 ps-1">
+                <input type="checkbox" class=" me-2">
+                <i class="fa-solid fa-trash me-2"></i>
+                <i class="fa-solid fa-envelope me-2"></i>
+                <i class="fa-solid fa-diagram-next me-2"></i>
+            </div>
+            <div class="col-3 p-0">ONGOING <span class="badge badge-primary dot1"> 10</span></div>
+            <div class="col-4 p-0">ALL JOB CARD <span class="badge badge-primary dot2"> 90</span></div>
+            <div class="col-3 p-0">COMPLETED <span class="badge badge-primary dot3"> 70</span></div>
+
+
+        </div>
+
+
+        <div class="table_layout mx-2">
+            <table>
+                <thead>
+                    <tr style="background-color: #00000030; font-size: 14px; ">
+                        <th>Status</th>
+                        <th>Job #</th>
+                        <th>Date</th>
+                        <th>Car</th>
+                        <th style="    text-align: center;">APV</th>
+                        <th style="    text-align: center;">CVT</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+                    <tr class="table_data1">
+
+                        <td><span class="badge badge-primary due_status">Primary</span></td>
+                        <td style="width: 20%;">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0%;">120#</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0%; font-size: 12px; ">mohamed yazid</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="due_data1">Dec 02, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="due_data2">30 days ago</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="no_plate">
+                            <table>
+                                <tr>
+                                    <td style="padding: 0% ">Audi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0% ">BC 3320</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="text-center app_align"><span class="approvel"></span></td>
+                        <td class="text-center app_align"><span class="convert"></span></td>
+                        <td class="price_est">$ 234.00</td>
+                        <td><select class="myDropdown " name="myDropdown">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select></td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+        <div style="text-align: right; margin-right: 1rem; " class="textsm col ">Displaying 1-26 of 26 results</div>
+</body>
+
+</html>
